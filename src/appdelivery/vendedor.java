@@ -8,9 +8,16 @@ package appdelivery;
  *
  * @author Fabricio Laureano
  */
-public class vendedor {
+public class vendedor extends usuario{
+    protected  int ID;
     
-    private String nombreVendedor;
-    private String emailVendedor;
-    private int numeroTelefonicoVendedor;
+    
+    public vendedor(String nombre, int codigo){
+    super(nombre);
+    this.ID=codigo;
+    }
+   public void mostrarDatosVendedor(){
+   
+   System.out.println("Nombre: "+getNombre()+"Codigo: "+ID);
+   } 
 }

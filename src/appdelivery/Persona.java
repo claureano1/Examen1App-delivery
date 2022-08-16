@@ -4,21 +4,16 @@
  */
 package appdelivery;
 
-import java.util.Scanner;
-
 /**
  *
  * @author Fabricio Laureano
  */
-public abstract class usuario {
-    Scanner entrada = new Scanner(System.in);
-    String nombre;
-   
-    public usuario (String _nombre){
-    this.nombre = _nombre; 
+public abstract class Persona   {
+    public String nombre;
+
+    public Persona(String _nombre) {
+        nombre = _nombre;
     }
     
-    public String getNombre () {
-    return nombre; 
-    }
 }
+
